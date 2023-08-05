@@ -1,0 +1,143 @@
+#container .ql-editor {
+    height: calc(100vh - 200px);
+    overflow: scroll;
+    border-bottom-left-radius: 10px;
+    
+}
+#container .ql-editor {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    border-radius: 10px;
+}
+#container .ql-editor::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+    border-radius: 10px;
+}
+
+#container .ql-toolbar.ql-snow {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    
+}
+
+.ql-toolbar .ql-stroke {
+    fill: none;
+    stroke: #888;
+}
+
+.ql-toolbar .ql-fill {
+    fill: #888;
+    stroke: none;
+}
+
+.ql-toolbar .ql-picker {
+    color: #888;
+}
+
+
+
+.ql-snow .ql-picker.ql-size .ql-picker-label::before, 
+.ql-snow .ql-picker.ql-size .ql-picker-item::before {
+  content: attr(data-value);
+}
+
+/* Set droplist names - -item is the currently selected font, -label is the font's appearance in the droplist*/
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='']::before
+{
+  content: 'Default';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='times-new-roman']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='times-new-roman']::before
+{
+  content: 'Times';
+  font-family: 'Times';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='arial']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='arial']::before
+{
+  content: 'Arial';
+  font-family: 'Arial';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='impact']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='impact']::before
+{
+  content: 'Impact';
+  font-family: 'Impact';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='courier']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='courier']::before
+{
+  content: 'Courier';
+  font-family: 'Courier';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='comic']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='comic']::before
+{
+  content: 'Comic Sans';
+  font-family: 'Comic Sans MS';
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value='calibri']::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value='calibri']::before
+{
+  content: 'Calibri';
+  font-family: 'Calibri';
+}
+
+
+
+/****************************************************
+Set the font-family content used for the HTML content.
+*****************************************************/
+.ql-font-arial {
+  font-family: 'Arial';
+}
+
+.ql-font-times-new-roman {
+  font-family: 'Times New Roman';
+}
+
+.ql-font-impact {
+  font-family: 'Impact';
+}
+
+.ql-font-courier {
+  font-family: 'Courier';
+}
+
+.ql-font-comic {
+  font-family: 'Comic Sans MS';
+}
+
+.ql-font-calibri {
+    font-family: 'Calibri';
+  }
+  
+
+
+  .ql-snow .ql-picker.ql-size .ql-picker-item[data-value="14px"]::before {
+    content: '14';
+    font-size: 14px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="16px"]::before {
+    content: '16';
+    font-size: 16px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="18px"]::before {
+    content: '18';
+    font-size: 18px !important;
+}
