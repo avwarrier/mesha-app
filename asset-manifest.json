@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/mesha-app/static/css/main.8a61306f.css",
+    "main.js": "/mesha-app/static/js/main.45312128.js",
+    "static/media/profile-placeholder.png": "/mesha-app/static/media/profile-placeholder.65f9347f9da59256b8cb.png",
+    "index.html": "/mesha-app/index.html",
+    "main.8a61306f.css.map": "/mesha-app/static/css/main.8a61306f.css.map",
+    "main.45312128.js.map": "/mesha-app/static/js/main.45312128.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a61306f.css",
+    "static/js/main.45312128.js"
+  ]
+}
