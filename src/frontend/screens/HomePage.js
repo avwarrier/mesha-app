@@ -19,7 +19,7 @@ function HomePage() {
     name: ''
   });
 
-  const [color, setColor] = useState('#fff');
+  const [color, setColor] = useState('#333');
 
   
 
