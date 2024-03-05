@@ -1,14 +1,12 @@
 import {React, useState} from 'react'
 import NavBarLogin from '../components/Nav/NavBarLogin'
 import {motion as m } from "framer-motion"
-import {  createUserWithEmailAndPassword  } from 'firebase/auth';
-import { auth, registerWithEmailAndPassword, signInWithGoogle, db } from '../../backend/firebase'
+import { registerWithEmailAndPassword, signInWithGoogle, db } from '../../backend/firebase'
 import { useNavigate } from 'react-router-dom';
 import { doc, getDoc } from "firebase/firestore";
 import Alert from '@mui/material/Alert';
 import IconButton from '@mui/material/IconButton';
 import Collapse from '@mui/material/Collapse';
-import Button from '@mui/material/Button';
 import CloseIcon from '@mui/icons-material/Close';
 import ReactLoading from "react-loading";
 import googleLogo from '../assets/googleLogo.png'
