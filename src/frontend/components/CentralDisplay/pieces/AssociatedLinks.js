@@ -1,8 +1,8 @@
 import {React, useEffect, useState} from 'react'
 import LinkAdd from './subpieces/LinkAdd'
 import { v4 as uuid } from 'uuid';
-import { auth, db } from '../../../../backend/firebase'
-import { collection, doc, setDoc, getDocs, collectionGroup, updateDoc, deleteDoc } from "firebase/firestore";
+import { db } from '../../../../backend/firebase'
+import { doc, updateDoc } from "firebase/firestore";
 import AddLinkOutlinedIcon from '@mui/icons-material/AddLinkOutlined';
 import './styleOther.css'
 

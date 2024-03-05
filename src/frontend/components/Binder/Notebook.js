@@ -1,10 +1,9 @@
-import {React, useState, useEffect, forwardRef, useImperativeHandle, useRef} from 'react'
+import {React, useState, useEffect, forwardRef, useImperativeHandle} from 'react'
 import NotebookItem from './BinderProps/NotebookItem'
 import Note from './BinderProps/DocItems/Note';
 import { v4 as uuid } from 'uuid';
-import { auth, db } from '../../../backend/firebase'
-import { collection, doc, setDoc, getDocs, collectionGroup, updateDoc, deleteDoc } from "firebase/firestore";
-import { onAuthStateChanged } from "firebase/auth";
+import { db } from '../../../backend/firebase'
+import { collection, doc, setDoc, getDocs, updateDoc, deleteDoc } from "firebase/firestore";
 
 const Notebook = forwardRef((props, ref) => {
 

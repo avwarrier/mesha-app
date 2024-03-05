@@ -5,26 +5,21 @@ import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
 import EditNoteIcon from '@mui/icons-material/EditNote';
 import CreateNewFolderIcon from '@mui/icons-material/CreateNewFolder';
-import SubjectIcon from '@mui/icons-material/Subject';
 import ClassProject from './ClassProject';
 import Folder from './Folder';
 import Notebook from './Notebook';
 import SchoolIcon from '@mui/icons-material/School';
 import { auth, db } from '../../../backend/firebase'
-import { collection, doc, updateDoc, getDoc } from "firebase/firestore";
+import { doc, updateDoc, getDoc } from "firebase/firestore";
 import { onAuthStateChanged } from "firebase/auth";
 import Skeleton from '@mui/material/Skeleton';
 import { v4 as uuid } from 'uuid';
 import '../CentralDisplay/pieces/styleOther.css'
 import {
-    DndContext,
-    closestCenter,
     KeyboardSensor, MouseSensor, useSensor, useSensors
 } from "@dnd-kit/core"
 import {
     arrayMove,
-    SortableContext,
-    verticalListSortingStrategy
 } from "@dnd-kit/sortable"
 
 const Binder = (props) => {

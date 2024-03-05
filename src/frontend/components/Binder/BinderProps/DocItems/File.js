@@ -1,16 +1,5 @@
 import {React, useState, useEffect, useRef} from 'react'
-import FolderIcon from '@mui/icons-material/Folder';
-import AddIcon from '@mui/icons-material/Add';
-import EditSharpIcon from '@mui/icons-material/EditSharp';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import Fade from '@mui/material/Fade';
-import CreateNewFolderIcon from '@mui/icons-material/CreateNewFolder';
-import SubjectIcon from '@mui/icons-material/Subject';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import DeleteIcon from '@mui/icons-material/Delete';
-import EditNoteIcon from '@mui/icons-material/EditNote';
-import docsLogo from '../../../../assets/docsLogo.png'
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 

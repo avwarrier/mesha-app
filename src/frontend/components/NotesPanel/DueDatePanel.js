@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import DueDate from './DueDate';
-import { auth, db } from '../../../backend/firebase'
-import { collection, doc, setDoc, getDocs, collectionGroup, getDoc, deleteDoc, updateDoc } from "firebase/firestore";
-import Skeleton from '@mui/material/Skeleton';
+import { db } from '../../../backend/firebase'
+import { collection, doc, getDocs, deleteDoc, updateDoc } from "firebase/firestore";
 import {motion as m, AnimatePresence } from "framer-motion"
 
 const DueDatePanel = (props) => {

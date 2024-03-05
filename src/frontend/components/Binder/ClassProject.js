@@ -1,17 +1,14 @@
-import {React, useState, useEffect, useId, forwardRef, useImperativeHandle, useRef} from 'react'
+import {React, useState, useEffect, forwardRef, useImperativeHandle, useRef} from 'react'
 import ClassProjectItem from './BinderProps/ClassProjectItem'
 import Folder from './Folder';
 import Notebook from './Notebook';
 import Note from './BinderProps/DocItems/Note';
 import Document from './BinderProps/DocItems/Document';
 import Link from './BinderProps/DocItems/Link';
-import { signInWithEmailAndPassword } from 'firebase/auth';
 import { v4 as uuid } from 'uuid';
-import { auth, db } from '../../../backend/firebase'
-import { collection, doc, setDoc, getDocs, collectionGroup, updateDoc, deleteDoc, getDoc } from "firebase/firestore";
-import { onAuthStateChanged } from "firebase/auth";
+import { db } from '../../../backend/firebase'
+import { collection, doc, setDoc, getDocs, updateDoc, deleteDoc, getDoc } from "firebase/firestore";
 import { useSortable } from '@dnd-kit/sortable';
-import { CSS } from '@dnd-kit/utilities';
 import File from './BinderProps/DocItems/File'
 
 

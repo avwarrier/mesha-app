@@ -1,6 +1,5 @@
 import React from 'react'
 import DueDatePanel from './DueDatePanel'
-import Notee from './Notee'
 import Canvas from './Canvas'
 
 const NotesPanel = (props) => {

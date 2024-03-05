@@ -2,8 +2,8 @@ import {React, useEffect, useState, useCallback, useRef} from 'react'
 import "quill/dist/quill.snow.css"
 import Quill from "quill"
 import './styles.css'
-import { auth, db } from '../../../../backend/firebase'
-import { collection, doc, setDoc, getDoc, collectionGroup, updateDoc, deleteDoc } from "firebase/firestore";
+import { db } from '../../../../backend/firebase'
+import { doc, getDoc, updateDoc } from "firebase/firestore";
 
 const NoteScreen = (props) => {
     const [name, setName] = useState('');

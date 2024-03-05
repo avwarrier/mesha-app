@@ -5,9 +5,8 @@ import Note from './BinderProps/DocItems/Note';
 import Document from './BinderProps/DocItems/Document';
 import Link from './BinderProps/DocItems/Link';
 import { v4 as uuid } from 'uuid';
-import { auth, db } from '../../../backend/firebase'
-import { collection, doc, setDoc, getDocs, collectionGroup, updateDoc, deleteDoc, getDoc } from "firebase/firestore";
-import { onAuthStateChanged } from "firebase/auth";
+import { db } from '../../../backend/firebase'
+import { collection, doc, setDoc, getDocs, updateDoc, deleteDoc, getDoc } from "firebase/firestore";
 import File from './BinderProps/DocItems/File'
 
 const Folder = forwardRef((props, ref) => {

@@ -4,17 +4,12 @@ import AssociatedLinks from './pieces/AssociatedLinks';
 import Description from './pieces/Description';
 import Comments from './pieces/Comments';
 import "quill/dist/quill.snow.css"
-import Quill from "quill"
-import { auth, db } from '../../../backend/firebase'
-import { collection, doc, setDoc, getDocs, collectionGroup, getDoc, deleteDoc, updateDoc } from "firebase/firestore";
-import { onAuthStateChanged } from "firebase/auth";
+import { db } from '../../../backend/firebase'
+import { doc, setDoc, getDoc, deleteDoc, updateDoc } from "firebase/firestore";
 import NotificationsPausedOutlinedIcon from '@mui/icons-material/NotificationsPausedOutlined';
-import Tooltip from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
-import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
-import { DateTimePicker, LocalizationProvider } from '@mui/x-date-pickers';
+import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import { MobileDateTimePicker } from '@mui/x-date-pickers/MobileDateTimePicker';
 import NoteScreen from './pieces/NoteScreen';

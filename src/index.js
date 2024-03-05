@@ -7,7 +7,6 @@ import { AnimatePresence } from "framer-motion";
 import MainScreen from "./frontend/screens/MainScreen";
 import GetStarted from './frontend/screens/GetStarted'
 import CompleteProfile from "./frontend/screens/CompleteProfile";
-import {useState} from 'react'
 
 
 

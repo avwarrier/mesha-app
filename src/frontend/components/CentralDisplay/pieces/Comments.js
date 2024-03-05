@@ -2,8 +2,8 @@ import {React, useEffect, useState} from 'react'
 import Comment from './subpieces/Comment';
 import AddIcon from '@mui/icons-material/Add';
 import { v4 as uuid } from 'uuid';
-import { auth, db } from '../../../../backend/firebase'
-import { collection, doc, setDoc, getDocs, collectionGroup, updateDoc, deleteDoc } from "firebase/firestore";
+import { db } from '../../../../backend/firebase'
+import { doc, updateDoc } from "firebase/firestore";
 import './styleOther.css'
 
 const Comments = (props) => {

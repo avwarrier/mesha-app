@@ -1,19 +1,14 @@
 import {React} from 'react'
-import profilePlaceHolder from '../../assets/profile-placeholder.png'
 import { auth, db } from '../../../backend/firebase'
-import { collection, doc, updateDoc, getDoc } from "firebase/firestore";
-import { onAuthStateChanged } from "firebase/auth";
+import { doc, getDoc } from "firebase/firestore";
 import {useState, useEffect} from 'react'
 import {  signOut } from "firebase/auth";
 import { useNavigate } from 'react-router-dom';
 import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import Fade from '@mui/material/Fade';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import BedtimeIcon from '@mui/icons-material/Bedtime';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
-import { Slider, Sketch, Material, Colorful, Compact, Circle, Wheel, Block, Github, Twitter } from '@uiw/react-color';
+import {Circle} from '@uiw/react-color';
 import Dialog from '@mui/material/Dialog';
 
 const NavBar = (props) => {
