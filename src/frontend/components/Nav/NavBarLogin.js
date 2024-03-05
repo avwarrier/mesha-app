@@ -1,5 +1,4 @@
 import {React} from 'react'
-import logoplaceholderimage from '../../assets/logo-placeholder-image.png'
 import { Link } from 'react-router-dom'
 
 const NavBarLogin = ({started}) => {
@@ -9,7 +8,6 @@ const NavBarLogin = ({started}) => {
     started ? 
     <div className='h-[70px] drop-shadow-md bg-[#ffffff] flex items-center justify-between'>
         <Link to="/"><div className='flex gap-[15px] items-center ml-[30px] cursor-pointer'>
-            <img alt='logo' className='h-[10.5vh]' src={logoplaceholderimage}/>
             <p className='text-[25px]'>Mesha</p>
         </div>
         </Link>
@@ -22,7 +20,6 @@ const NavBarLogin = ({started}) => {
     :
     <div className='h-[70px] drop-shadow-md bg-[#ffffff] flex items-center justify-between'>
         <Link to="/"><div className='flex gap-[15px] items-center ml-[30px] cursor-pointer'>
-            <img alt='logo' className='h-[10.5vh]' src={logoplaceholderimage}/>
             <p className='text-[25px]'>Mesha</p>
         </div>
         </Link>

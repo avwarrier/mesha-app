@@ -10,6 +10,7 @@ import IconButton from '@mui/material/IconButton';
 import Collapse from '@mui/material/Collapse';
 import Button from '@mui/material/Button';
 import CloseIcon from '@mui/icons-material/Close';
+import googleLogo from '../assets/googleLogo.png'
 
 const Login = () => {
     const navigate = useNavigate();
@@ -135,8 +136,8 @@ const Login = () => {
                     :
                     <>
                 <div className='flex items-center justify-between bg-white h-[50px] w-[300px] border-[1.5px] border-[#4a6a8f] rounded-xl cursor-pointer  hover:shadow-md' onClick={googleAuthLogin}>
-                    <img alt='google' className='ml-[20px] h-[25px]' src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2008px-Google_%22G%22_Logo.svg.png'/>
-                    <p className='mr-[70px] font-light'>Sign-In With Google</p>
+                    <img alt='google' className='ml-[20px] h-[25px]' src={googleLogo}/>
+                    <p className='mr-[70px]  font-light'>Sign-In With Google</p>
                 </div>
                 <p className='text-[#4a6a8f]'>_________________________</p>
                 <div className='h-[210px] w-[300px] flex flex-col items-center justify-center gap-[15px] mt-[15px]'>

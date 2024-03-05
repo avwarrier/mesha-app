@@ -1,5 +1,4 @@
 import {React} from 'react'
-import logoplaceholderimage from '../../assets/logo-placeholder-image.png'
 import profilePlaceHolder from '../../assets/profile-placeholder.png'
 import { auth, db } from '../../../backend/firebase'
 import { collection, doc, updateDoc, getDoc } from "firebase/firestore";
@@ -76,7 +75,6 @@ const [anchorEl, setAnchorEl] = useState(null);
   return (
     <div className='h-[70px] border-b-[1px] border-[#dbdbdb] bg-[#ffffff] flex items-center justify-between'>
         <div className='flex gap-[15px] items-center ml-[30px]'>
-            <img alt='logo' className='h-[10.5vh]' src={logoplaceholderimage}/>
             <p className='text-[25px]'>Mesha</p>
         </div>
         <div className='mr-[30px]'>
